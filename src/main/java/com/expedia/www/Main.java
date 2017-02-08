@@ -1,4 +1,5 @@
 package com.expedia.www;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -6,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Scanner scanner = new Scanner(System.in);
+        ArrayList<History> report;
 
     	System.out.println("Welcome to the Expedia challenge");
 
@@ -30,7 +32,8 @@ public class Main {
 
     }
     static void editWebsite(){
-
+        EditWebPage editting = new EditWebPage();
+        editting.editElement();
     }
 
     static void editReport(){
